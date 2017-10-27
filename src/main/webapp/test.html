@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="业务功能,上传查询">
+<meta name="descripition" content="">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<title>功能测试</title>
+<style type="text/css">
+body{
+	background-image:url();
+	background-size: cover;
+}
+
+</style>
+</head>
+<body>
+	请选择图片<input id="a1" name="imgfile" type="file" accept="image/*"> 
+	<button id="bt1">提交</button>
+	<hr>
+	<h2>图片预览</h2>
+	
+	<p><img id="largeImg" alt="Large Image" src="img/preview.jpg"></p>
+	
+	<p class="thumbs">
+		<a href="img/img2-lg.jpg"><img src="img/img2-thumb.jpg"></a>
+		<a href="img/img3-lg.jpg"><img src="img/img3-thumb.jpg"></a>
+		<a href="img/img4-lg.jpg"><img src="img/img4-thumb.jpg"></a>
+		<a href="img/img5-lg.jpg"><img src="img/img5-thumb.jpg"></a>
+		<a href="img/img6-lg.jpg"><img src="img/img6-thumb.jpg"></a>
+	</p>
+	<button id="all">查询</button>
+	<table class="table" id="table">
+	</table>
+</body>
+<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="js/ajaxfileupload.js"></script>
+<script type="text/javascript">
+	$(function(){
+		
+		$(".thumbs a").click(function(){
+			var url = $(this).attr("href");
+			$("#largeImg").attr("src",url);
+			return false;
+		})
+		
+		
+		$("#all").click(function(){
+			window.location.href="dashboard.html";
+			/* $("#table").html("");
+			$.ajax({
+				type:"get",
+				url:"/all",
+				data:"",
+				success:function(data){
+					for(var i=0;i<data.length;i++){
+						console.log(data);
+						$("#table").append("<tr><td>"+data[i].id+"</td><td>"+data[i].age+"</td><td>"+data[i].cupSize+"</td><td>"+data[i].isUse+"</td></tr>")
+					}
+				}
+			}) */
+		})
+		
+		
+		//file upload
+		$("#bt1").click(function(){
+			//var imgUrl = $("#fileUpload").val();
+			console.log($("#a1").val());
+			$.ajaxFileUpload({
+				url:"/imgUpload",
+				secureuri: false,
+				fileElementId:"a1",
+				dataType:"text",
+				success:function(data){
+					if(data!="FALSE"){
+						$("#largeImg").attr("src","/usr/uploadimg/"+data);
+						alert("上传成功");
+					}else{
+						alert("上传失败!");
+					}
+				}
+			})
+		})
+		$("#a1").change(function(){
+			//图片预览
+			var fil = this.files;
+			var reader = new FileReader();
+			reader.readAsDataURL(fil[0]);
+			reader.onload = function(){
+				$("#largeImg").attr("src",reader.result);
+			}
+		})
+	});
+	
+	
+</script>
+
+</html>
