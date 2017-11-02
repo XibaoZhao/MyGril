@@ -1,7 +1,5 @@
 package com.example.controller;
 
-import java.util.List;
-
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.example.domain.Girl;
+import com.example.domain.GridPageBean;
 import com.example.service.GirlService;
 
 @Controller
@@ -22,8 +21,17 @@ public class HelloController {
 
 	@RequestMapping(value = "/all", method = RequestMethod.GET)
 	@ResponseBody
-	public List<Girl> findAll(HttpServletRequest request) {
-		return girlService.findAll();
+	public GridPageBean<Girl> findAll(HttpServletRequest request) {
+		String cupSize = request.getParameter("cupSize");
+		String pageNoStr = request.getParameter("pageNo");
+		Integer pageNo = null;
+		try {
+			pageNo = Integer.parseInt(pageNoStr);
+		} catch (NumberFormatException e) {
+			pageNo=1;
+			e.printStackTrace();
+		}
+		return girlService.findAll(cupSize,pageNo);
 	}
 
 	@RequestMapping(value = "/add", method = RequestMethod.GET)
