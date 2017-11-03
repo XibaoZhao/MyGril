@@ -204,7 +204,6 @@
 					})
 					$("#del_"+data[i].id).click(function(){
 						var id = $(this).parent().parent().children().eq(0).html();
-						console.log(id);
 						$.ajax({
 							type:"get",
 							url:"/delete	",
@@ -221,14 +220,21 @@
 				}else{
 					$("#yejiao").html("");
 					var bar = "";
-					bar +='<li><a href="#">&laquo;</a></li>';
+					bar +="<li><a href='javascript:void(0)' onclick='prePage()'>&laquo;</a></li>";
 					for(var i=0;i<bean.total;i++){
 						bar += "<li><a href='javascript:void(0)'>"+(i+1)+"</a></li>";
 					}
-					bar +="<li><a href='#'>&raquo;</a></li>";
+					bar +="<li><a href='javascript:void(0)' onclick='nextPage()'>&raquo;</a></li>";
 					$("#yejiao").html(bar);
+					if(pageNo<1){
+						window.location.hash="#"+1;
+						return false;
+					}else if(pageNo>bean.total){
+						window.location.hash="#"+bean.total;
+						Csearch();
+					}
 					$("#yejiao").children("li").eq(pageNo).addClass("active");
-					$("#yejiao a").click(function(){
+					$("#yejiao a:gt(0):lt("+bean.total+")").click(function(){
 						var p = parseInt($(this).html());
 						window.location.hash="#"+p;
 						Csearch();
@@ -238,6 +244,8 @@
 			}
 		})
 	}
+	
+	
 	
 	function Insert(){
 		$("#age").val("");
@@ -277,8 +285,23 @@
 			if (page.indexOf("#") != -1) {
 				page = page.substring(1);
 			}
+		}else{
+			page = 1;
 		}
 		return page;
+	}
+	
+	function prePage(){
+		var p = getHashPage()-1;
+		window.location.hash="#"+p;
+		Csearch(); 	
+	}
+	
+	function nextPage(){
+		var p = parseInt(getHashPage())+1;
+		console.log("p="+p);
+		window.location.hash="#"+p;
+		Csearch();
 	}
 </script>
 </html>
