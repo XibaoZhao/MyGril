@@ -24,7 +24,6 @@ public class HelloController {
 	public GridPageBean<Girl> findAll(HttpServletRequest request) {
 		String cupSize = request.getParameter("cupSize");
 		String pageNoStr = request.getParameter("pageNo");
-		System.out.println(pageNoStr);
 		Integer pageNo = null;
 		try {
 			pageNo = Integer.parseInt(pageNoStr);
