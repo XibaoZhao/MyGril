@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.example</groupId>
-	<artifactId>girl</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>phone</artifactId>
+	<version>1.0</version>
 	<packaging>jar</packaging>
 
-	<name>girl</name>
+	<name>phone</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
