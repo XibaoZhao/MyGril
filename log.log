@@ -1387,3 +1387,303 @@ You may wish to exclude one of them to ensure predictable runtime behaviour
 2017-11-04 09:54:48.841  INFO 28664 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
 2017-11-04 09:54:49.079  INFO 28664 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@71238fc2: startup date [Sat Nov 04 09:54:42 CST 2017]; root of context hierarchy
 2017-11-04 09:54:49.093  INFO 28664 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-11-04 10:02:35.176  WARN 15876 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/F:/apache-maven-3.1.1/Repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/F:/apache-maven-3.1.1/Repository/org/json/json/20140107/json-20140107.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behaviour
+
+2017-11-04 10:02:35.212  INFO 15876 --- [main] com.example.PhoneApplicationTests        : Starting PhoneApplicationTests on USER-20150630JE with PID 15876 (started by Administrator in E:\workspace\phone)
+2017-11-04 10:02:35.212  INFO 15876 --- [main] com.example.PhoneApplicationTests        : No active profile set, falling back to default profiles: default
+2017-11-04 10:02:35.279  INFO 15876 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@71238fc2: startup date [Sat Nov 04 10:02:35 CST 2017]; root of context hierarchy
+2017-11-04 10:02:39.183  INFO 15876 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-11-04 10:02:39.210  INFO 15876 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-11-04 10:02:39.425  INFO 15876 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-11-04 10:02:39.429  INFO 15876 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-11-04 10:02:39.440  INFO 15876 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-11-04 10:02:39.528  INFO 15876 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-04 10:02:39.780  INFO 15876 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-11-04 10:02:41.110  INFO 15876 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2017-11-04 10:02:41.272  INFO 15876 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-11-04 10:02:42.906  INFO 15876 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@71238fc2: startup date [Sat Nov 04 10:02:35 CST 2017]; root of context hierarchy
+2017-11-04 10:02:43.054  INFO 15876 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/add],methods=[GET]}" onto public java.lang.String com.example.controller.HelloController.add(javax.servlet.http.HttpServletRequest)
+2017-11-04 10:02:43.064  INFO 15876 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/delete],methods=[GET]}" onto public java.lang.String com.example.controller.HelloController.delete(javax.servlet.http.HttpServletRequest)
+2017-11-04 10:02:43.071  INFO 15876 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/all],methods=[GET]}" onto public com.example.domain.GridPageBean<com.example.domain.Girl> com.example.controller.HelloController.findAll(javax.servlet.http.HttpServletRequest)
+2017-11-04 10:02:43.073  INFO 15876 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.example.controller.IndexControlller.index()
+2017-11-04 10:02:43.075  INFO 15876 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/imgUpload]}" onto public java.lang.String com.example.controller.Upload.upload(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile[]) throws java.io.IOException
+2017-11-04 10:02:43.078  INFO 15876 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/wx.do],methods=[GET]}" onto public void com.example.controller.WexinServlet.CheckWexin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2017-11-04 10:02:43.081  INFO 15876 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/wx.do],methods=[POST]}" onto public void com.example.controller.WexinServlet.reMessage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2017-11-04 10:02:43.185  INFO 15876 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-04 10:02:43.186  INFO 15876 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-04 10:02:43.312  INFO 15876 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-04 10:02:43.356  INFO 15876 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [META-INF/resources/index.html]
+2017-11-04 10:02:43.855  INFO 15876 --- [main] com.example.PhoneApplicationTests        : Started PhoneApplicationTests in 9.303 seconds (JVM running for 10.826)
+2017-11-04 10:02:44.001  INFO 15876 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-11-04 10:02:44.315  INFO 15876 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@71238fc2: startup date [Sat Nov 04 10:02:35 CST 2017]; root of context hierarchy
+2017-11-04 10:02:44.324  INFO 15876 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-11-04 10:09:55.470  WARN 3680 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/F:/apache-maven-3.1.1/Repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/F:/apache-maven-3.1.1/Repository/org/json/json/20140107/json-20140107.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behaviour
+
+2017-11-04 10:09:55.498  INFO 3680 --- [main] com.example.PhoneApplicationTests        : Starting PhoneApplicationTests on USER-20150630JE with PID 3680 (started by Administrator in E:\workspace\phone)
+2017-11-04 10:09:55.499  INFO 3680 --- [main] com.example.PhoneApplicationTests        : No active profile set, falling back to default profiles: default
+2017-11-04 10:09:55.563  INFO 3680 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@71238fc2: startup date [Sat Nov 04 10:09:55 CST 2017]; root of context hierarchy
+2017-11-04 10:09:58.835  INFO 3680 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-11-04 10:09:58.863  INFO 3680 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-11-04 10:09:59.005  INFO 3680 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-11-04 10:09:59.010  INFO 3680 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-11-04 10:09:59.014  INFO 3680 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-11-04 10:09:59.135  INFO 3680 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-04 10:09:59.293  INFO 3680 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-11-04 10:10:00.318  INFO 3680 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2017-11-04 10:10:00.437  INFO 3680 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-11-04 10:10:01.638  INFO 3680 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@71238fc2: startup date [Sat Nov 04 10:09:55 CST 2017]; root of context hierarchy
+2017-11-04 10:10:01.787  INFO 3680 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/add],methods=[GET]}" onto public java.lang.String com.example.controller.HelloController.add(javax.servlet.http.HttpServletRequest)
+2017-11-04 10:10:01.789  INFO 3680 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/delete],methods=[GET]}" onto public java.lang.String com.example.controller.HelloController.delete(javax.servlet.http.HttpServletRequest)
+2017-11-04 10:10:01.791  INFO 3680 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/all],methods=[GET]}" onto public com.example.domain.GridPageBean<com.example.domain.Girl> com.example.controller.HelloController.findAll(javax.servlet.http.HttpServletRequest)
+2017-11-04 10:10:01.792  INFO 3680 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.example.controller.IndexControlller.index()
+2017-11-04 10:10:01.793  INFO 3680 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/imgUpload]}" onto public java.lang.String com.example.controller.Upload.upload(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile[]) throws java.io.IOException
+2017-11-04 10:10:01.796  INFO 3680 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/wx.do],methods=[GET]}" onto public void com.example.controller.WexinServlet.CheckWexin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2017-11-04 10:10:01.799  INFO 3680 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/wx.do],methods=[POST]}" onto public void com.example.controller.WexinServlet.reMessage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2017-11-04 10:10:01.886  INFO 3680 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-04 10:10:01.886  INFO 3680 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-04 10:10:01.975  INFO 3680 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-04 10:10:02.010  INFO 3680 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [META-INF/resources/index.html]
+2017-11-04 10:10:02.352  INFO 3680 --- [main] com.example.PhoneApplicationTests        : Started PhoneApplicationTests in 7.575 seconds (JVM running for 8.938)
+2017-11-04 10:10:02.480  INFO 3680 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-11-04 10:10:02.723  INFO 3680 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@71238fc2: startup date [Sat Nov 04 10:09:55 CST 2017]; root of context hierarchy
+2017-11-04 10:10:02.732  INFO 3680 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-11-04 16:04:37.961  INFO 27996 --- [main] com.example.PhoneApplication             : Starting PhoneApplication on USER-20150630JE with PID 27996 (E:\workspace\phone\target\classes started by Administrator in E:\workspace\phone)
+2017-11-04 16:04:37.965  INFO 27996 --- [main] com.example.PhoneApplication             : No active profile set, falling back to default profiles: default
+2017-11-04 16:04:38.082  INFO 27996 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f1c7bf6: startup date [Sat Nov 04 16:04:38 CST 2017]; root of context hierarchy
+2017-11-04 16:04:43.209  INFO 27996 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2017-11-04 16:04:43.249  INFO 27996 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-04 16:04:43.253  INFO 27996 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-04 16:04:43.706  INFO 27996 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-04 16:04:43.708  INFO 27996 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5632 ms
+2017-11-04 16:04:44.093  INFO 27996 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-04 16:04:44.106  INFO 27996 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-04 16:04:44.107  INFO 27996 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-04 16:04:44.108  INFO 27996 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-04 16:04:44.109  INFO 27996 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-04 16:04:45.298  INFO 27996 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-11-04 16:04:45.333  INFO 27996 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-11-04 16:04:45.497  INFO 27996 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-11-04 16:04:45.503  INFO 27996 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-11-04 16:04:45.506  INFO 27996 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-11-04 16:04:45.603  INFO 27996 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-04 16:04:45.998  INFO 27996 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-11-04 16:04:47.148  INFO 27996 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2017-11-04 16:04:47.264  INFO 27996 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-11-04 16:04:50.371  INFO 27996 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f1c7bf6: startup date [Sat Nov 04 16:04:38 CST 2017]; root of context hierarchy
+2017-11-04 16:04:50.737  INFO 27996 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/add],methods=[GET]}" onto public java.lang.String com.example.controller.HelloController.add(javax.servlet.http.HttpServletRequest)
+2017-11-04 16:04:50.740  INFO 27996 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/delete],methods=[GET]}" onto public java.lang.String com.example.controller.HelloController.delete(javax.servlet.http.HttpServletRequest)
+2017-11-04 16:04:50.741  INFO 27996 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/all],methods=[GET]}" onto public com.example.domain.GridPageBean<com.example.domain.Girl> com.example.controller.HelloController.findAll(javax.servlet.http.HttpServletRequest)
+2017-11-04 16:04:50.746  INFO 27996 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.example.controller.IndexControlller.index()
+2017-11-04 16:04:50.806  INFO 27996 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/imgUpload]}" onto public java.lang.String com.example.controller.Upload.upload(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile[]) throws java.io.IOException
+2017-11-04 16:04:50.809  INFO 27996 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/wx.do],methods=[GET]}" onto public void com.example.controller.WexinServlet.CheckWexin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2017-11-04 16:04:50.809  INFO 27996 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/wx.do],methods=[POST]}" onto public void com.example.controller.WexinServlet.reMessage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2017-11-04 16:04:51.051  INFO 27996 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-04 16:04:51.053  INFO 27996 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-04 16:04:51.297  INFO 27996 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-04 16:04:51.447  INFO 27996 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [META-INF/resources/index.html]
+2017-11-04 16:04:52.886  INFO 27996 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-04 16:04:53.330  INFO 27996 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 80 (http)
+2017-11-04 16:04:53.426  INFO 27996 --- [main] com.example.PhoneApplication             : Started PhoneApplication in 16.022 seconds (JVM running for 16.937)
+2017-11-04 16:12:42.140  INFO 27996 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-04 16:12:42.141  INFO 27996 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-04 16:12:42.167  INFO 27996 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+2017-11-04 16:13:43.269  INFO 27996 --- [http-nio-80-exec-7] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2017-11-04 16:16:22.717  INFO 24068 --- [main] com.example.PhoneApplication             : Starting PhoneApplication on USER-20150630JE with PID 24068 (E:\workspace\phone\target\classes started by Administrator in E:\workspace\phone)
+2017-11-04 16:16:22.722  INFO 24068 --- [main] com.example.PhoneApplication             : No active profile set, falling back to default profiles: default
+2017-11-04 16:16:22.849  INFO 24068 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f1c7bf6: startup date [Sat Nov 04 16:16:22 CST 2017]; root of context hierarchy
+2017-11-04 16:16:27.068  INFO 24068 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2017-11-04 16:16:27.108  INFO 24068 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-04 16:16:27.110  INFO 24068 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-04 16:16:27.369  INFO 24068 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-04 16:16:27.372  INFO 24068 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4539 ms
+2017-11-04 16:16:27.790  INFO 24068 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-04 16:16:27.798  INFO 24068 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-04 16:16:27.800  INFO 24068 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-04 16:16:27.802  INFO 24068 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-04 16:16:27.804  INFO 24068 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-04 16:16:29.018  INFO 24068 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-11-04 16:16:29.042  INFO 24068 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-11-04 16:16:29.184  INFO 24068 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-11-04 16:16:29.187  INFO 24068 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-11-04 16:16:29.191  INFO 24068 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-11-04 16:16:29.311  INFO 24068 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-04 16:16:29.555  INFO 24068 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-11-04 16:16:30.608  INFO 24068 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2017-11-04 16:16:30.800  INFO 24068 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-11-04 16:16:32.463  INFO 24068 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f1c7bf6: startup date [Sat Nov 04 16:16:22 CST 2017]; root of context hierarchy
+2017-11-04 16:16:32.666  INFO 24068 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/add],methods=[GET]}" onto public java.lang.String com.example.controller.HelloController.add(javax.servlet.http.HttpServletRequest)
+2017-11-04 16:16:32.668  INFO 24068 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/delete],methods=[GET]}" onto public java.lang.String com.example.controller.HelloController.delete(javax.servlet.http.HttpServletRequest)
+2017-11-04 16:16:32.669  INFO 24068 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/all],methods=[GET]}" onto public com.example.domain.GridPageBean<com.example.domain.Girl> com.example.controller.HelloController.findAll(javax.servlet.http.HttpServletRequest)
+2017-11-04 16:16:32.670  INFO 24068 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.example.controller.IndexControlller.index()
+2017-11-04 16:16:32.675  INFO 24068 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/imgUpload]}" onto public java.lang.String com.example.controller.Upload.upload(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile[]) throws java.io.IOException
+2017-11-04 16:16:32.679  INFO 24068 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/wx.do],methods=[GET]}" onto public void com.example.controller.WexinServlet.CheckWexin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2017-11-04 16:16:32.680  INFO 24068 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/wx.do],methods=[POST]}" onto public void com.example.controller.WexinServlet.reMessage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2017-11-04 16:16:32.737  INFO 24068 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-04 16:16:32.738  INFO 24068 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-04 16:16:32.944  INFO 24068 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-04 16:16:32.996  INFO 24068 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [META-INF/resources/index.html]
+2017-11-04 16:16:33.655  INFO 24068 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-04 16:16:33.949  INFO 24068 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 80 (http)
+2017-11-04 16:16:33.972  INFO 24068 --- [main] com.example.PhoneApplication             : Started PhoneApplication in 11.882 seconds (JVM running for 12.751)
+2017-11-04 16:16:55.985  INFO 26668 --- [main] com.example.PhoneApplication             : Starting PhoneApplication on USER-20150630JE with PID 26668 (E:\workspace\phone\target\classes started by Administrator in E:\workspace\phone)
+2017-11-04 16:16:55.989  INFO 26668 --- [main] com.example.PhoneApplication             : No active profile set, falling back to default profiles: default
+2017-11-04 16:16:56.116  INFO 26668 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f1c7bf6: startup date [Sat Nov 04 16:16:56 CST 2017]; root of context hierarchy
+2017-11-04 16:17:00.510  INFO 26668 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2017-11-04 16:17:00.537  INFO 26668 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-04 16:17:00.541  INFO 26668 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-04 16:17:00.910  INFO 26668 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-04 16:17:00.911  INFO 26668 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4801 ms
+2017-11-04 16:17:01.428  INFO 26668 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-04 16:17:01.438  INFO 26668 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-04 16:17:01.440  INFO 26668 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-04 16:17:01.441  INFO 26668 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-04 16:17:01.444  INFO 26668 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-04 16:17:22.448  INFO 26704 --- [main] com.example.PhoneApplication             : Starting PhoneApplication on USER-20150630JE with PID 26704 (E:\workspace\phone\target\classes started by Administrator in E:\workspace\phone)
+2017-11-04 16:17:22.452  INFO 26704 --- [main] com.example.PhoneApplication             : No active profile set, falling back to default profiles: default
+2017-11-04 16:17:22.550  INFO 26704 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f1c7bf6: startup date [Sat Nov 04 16:17:22 CST 2017]; root of context hierarchy
+2017-11-04 16:17:26.911  INFO 26704 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2017-11-04 16:17:26.937  INFO 26704 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-04 16:17:26.941  INFO 26704 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-04 16:17:27.204  INFO 26704 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-04 16:17:27.205  INFO 26704 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4660 ms
+2017-11-04 16:17:27.538  INFO 26704 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-04 16:17:27.573  INFO 26704 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-04 16:17:27.574  INFO 26704 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-04 16:17:27.575  INFO 26704 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-04 16:17:27.576  INFO 26704 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-04 16:17:28.653  INFO 26704 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-11-04 16:17:28.673  INFO 26704 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-11-04 16:17:28.804  INFO 26704 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-11-04 16:17:28.807  INFO 26704 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-11-04 16:17:28.810  INFO 26704 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-11-04 16:17:28.912  INFO 26704 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-04 16:17:29.217  INFO 26704 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-11-04 16:17:30.125  INFO 26704 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2017-11-04 16:17:30.250  INFO 26704 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-11-04 16:17:31.717  INFO 26704 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f1c7bf6: startup date [Sat Nov 04 16:17:22 CST 2017]; root of context hierarchy
+2017-11-04 16:17:32.012  INFO 26704 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/add],methods=[GET]}" onto public java.lang.String com.example.controller.HelloController.add(javax.servlet.http.HttpServletRequest)
+2017-11-04 16:17:32.015  INFO 26704 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/delete],methods=[GET]}" onto public java.lang.String com.example.controller.HelloController.delete(javax.servlet.http.HttpServletRequest)
+2017-11-04 16:17:32.017  INFO 26704 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/all],methods=[GET]}" onto public com.example.domain.GridPageBean<com.example.domain.Girl> com.example.controller.HelloController.findAll(javax.servlet.http.HttpServletRequest)
+2017-11-04 16:17:32.022  INFO 26704 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.example.controller.IndexControlller.index()
+2017-11-04 16:17:32.026  INFO 26704 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/imgUpload]}" onto public java.lang.String com.example.controller.Upload.upload(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile[]) throws java.io.IOException
+2017-11-04 16:17:32.031  INFO 26704 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/wx.do],methods=[POST]}" onto public void com.example.controller.WexinServlet.reMessage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2017-11-04 16:17:32.032  INFO 26704 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/wx.do],methods=[GET]}" onto public void com.example.controller.WexinServlet.CheckWexin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2017-11-04 16:17:32.211  INFO 26704 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-04 16:17:32.237  INFO 26704 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-04 16:17:32.371  INFO 26704 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-04 16:17:32.445  INFO 26704 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [META-INF/resources/index.html]
+2017-11-04 16:17:33.028  INFO 26704 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-04 16:17:33.284  INFO 26704 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 80 (http)
+2017-11-04 16:17:33.295  INFO 26704 --- [main] com.example.PhoneApplication             : Started PhoneApplication in 11.579 seconds (JVM running for 12.412)
+2017-11-04 16:17:36.196  INFO 26704 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-04 16:17:36.196  INFO 26704 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-04 16:17:36.224  INFO 26704 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+2017-11-04 16:23:38.023  INFO 23288 --- [main] com.example.PhoneApplication             : Starting PhoneApplication on USER-20150630JE with PID 23288 (E:\workspace\phone\target\classes started by Administrator in E:\workspace\phone)
+2017-11-04 16:23:38.030  INFO 23288 --- [main] com.example.PhoneApplication             : No active profile set, falling back to default profiles: default
+2017-11-04 16:23:38.161  INFO 23288 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f1c7bf6: startup date [Sat Nov 04 16:23:38 CST 2017]; root of context hierarchy
+2017-11-04 16:23:41.813  INFO 23288 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2017-11-04 16:23:41.841  INFO 23288 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-04 16:23:41.844  INFO 23288 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-04 16:23:42.123  INFO 23288 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-04 16:23:42.123  INFO 23288 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3966 ms
+2017-11-04 16:23:42.412  INFO 23288 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-04 16:23:42.417  INFO 23288 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-04 16:23:42.418  INFO 23288 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-04 16:23:42.418  INFO 23288 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-04 16:23:42.418  INFO 23288 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-04 16:23:43.574  INFO 23288 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-11-04 16:23:43.598  INFO 23288 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-11-04 16:23:43.744  INFO 23288 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-11-04 16:23:43.747  INFO 23288 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-11-04 16:23:43.751  INFO 23288 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-11-04 16:23:43.827  INFO 23288 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-04 16:23:44.110  INFO 23288 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-11-04 16:23:45.091  INFO 23288 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2017-11-04 16:23:45.261  INFO 23288 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-11-04 16:23:46.377  INFO 23288 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f1c7bf6: startup date [Sat Nov 04 16:23:38 CST 2017]; root of context hierarchy
+2017-11-04 16:23:46.564  INFO 23288 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/add],methods=[GET]}" onto public java.lang.String com.example.controller.HelloController.add(javax.servlet.http.HttpServletRequest)
+2017-11-04 16:23:46.568  INFO 23288 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/delete],methods=[GET]}" onto public java.lang.String com.example.controller.HelloController.delete(javax.servlet.http.HttpServletRequest)
+2017-11-04 16:23:46.569  INFO 23288 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/all],methods=[GET]}" onto public com.example.domain.GridPageBean<com.example.domain.Girl> com.example.controller.HelloController.findAll(javax.servlet.http.HttpServletRequest)
+2017-11-04 16:23:46.572  INFO 23288 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.example.controller.IndexControlller.index()
+2017-11-04 16:23:46.576  INFO 23288 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/imgUpload]}" onto public java.lang.String com.example.controller.Upload.upload(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile[]) throws java.io.IOException
+2017-11-04 16:23:46.579  INFO 23288 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/wx.do],methods=[POST]}" onto public void com.example.controller.WexinServlet.reMessage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2017-11-04 16:23:46.580  INFO 23288 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/wx.do],methods=[GET]}" onto public void com.example.controller.WexinServlet.CheckWexin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2017-11-04 16:23:46.689  INFO 23288 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-04 16:23:46.690  INFO 23288 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-04 16:23:46.808  INFO 23288 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-04 16:23:46.896  INFO 23288 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [META-INF/resources/index.html]
+2017-11-04 16:23:47.527  INFO 23288 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-04 16:23:47.683  INFO 23288 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 80 (http)
+2017-11-04 16:23:47.700  INFO 23288 --- [main] com.example.PhoneApplication             : Started PhoneApplication in 10.272 seconds (JVM running for 11.037)
+2017-11-04 16:23:57.303  INFO 23288 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-04 16:23:57.304  INFO 23288 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-04 16:23:57.330  INFO 23288 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+2017-11-04 16:30:11.295  INFO 15512 --- [main] com.example.PhoneApplication             : Starting PhoneApplication on USER-20150630JE with PID 15512 (E:\workspace\phone\target\classes started by Administrator in E:\workspace\phone)
+2017-11-04 16:30:11.299  INFO 15512 --- [main] com.example.PhoneApplication             : No active profile set, falling back to default profiles: default
+2017-11-04 16:30:11.410  INFO 15512 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f1c7bf6: startup date [Sat Nov 04 16:30:11 CST 2017]; root of context hierarchy
+2017-11-04 16:30:16.714  INFO 15512 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2017-11-04 16:30:16.740  INFO 15512 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-04 16:30:16.742  INFO 15512 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-04 16:30:17.003  INFO 15512 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-04 16:30:17.005  INFO 15512 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5599 ms
+2017-11-04 16:30:17.571  INFO 15512 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-04 16:30:17.576  INFO 15512 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-04 16:30:17.577  INFO 15512 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-04 16:30:17.577  INFO 15512 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-04 16:30:17.577  INFO 15512 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-04 16:30:18.957  INFO 15512 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-11-04 16:30:18.977  INFO 15512 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-11-04 16:30:19.115  INFO 15512 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-11-04 16:30:19.118  INFO 15512 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-11-04 16:30:19.120  INFO 15512 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-11-04 16:30:19.193  INFO 15512 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-04 16:30:19.446  INFO 15512 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-11-04 16:30:20.962  INFO 15512 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2017-11-04 16:30:21.186  INFO 15512 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-11-04 16:30:22.667  INFO 15512 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f1c7bf6: startup date [Sat Nov 04 16:30:11 CST 2017]; root of context hierarchy
+2017-11-04 16:30:22.842  INFO 15512 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/add],methods=[GET]}" onto public java.lang.String com.example.controller.HelloController.add(javax.servlet.http.HttpServletRequest)
+2017-11-04 16:30:22.844  INFO 15512 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/delete],methods=[GET]}" onto public java.lang.String com.example.controller.HelloController.delete(javax.servlet.http.HttpServletRequest)
+2017-11-04 16:30:22.845  INFO 15512 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/all],methods=[GET]}" onto public com.example.domain.GridPageBean<com.example.domain.Girl> com.example.controller.HelloController.findAll(javax.servlet.http.HttpServletRequest)
+2017-11-04 16:30:22.846  INFO 15512 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.example.controller.IndexControlller.index()
+2017-11-04 16:30:22.849  INFO 15512 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/imgUpload]}" onto public java.lang.String com.example.controller.Upload.upload(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile[]) throws java.io.IOException
+2017-11-04 16:30:22.854  INFO 15512 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/wx.do],methods=[POST]}" onto public void com.example.controller.WexinServlet.reMessage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2017-11-04 16:30:22.856  INFO 15512 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/wx.do],methods=[GET]}" onto public void com.example.controller.WexinServlet.CheckWexin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2017-11-04 16:30:22.988  INFO 15512 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-04 16:30:22.988  INFO 15512 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-04 16:30:23.117  INFO 15512 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-04 16:30:23.268  INFO 15512 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [META-INF/resources/index.html]
+2017-11-04 16:30:25.320  INFO 15512 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-04 16:30:25.539  INFO 15512 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 80 (http)
+2017-11-04 16:30:25.576  INFO 15512 --- [main] com.example.PhoneApplication             : Started PhoneApplication in 14.873 seconds (JVM running for 15.676)
+2017-11-04 16:30:43.576  INFO 15512 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-04 16:30:43.576  INFO 15512 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-04 16:30:43.648  INFO 15512 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 71 ms
+2017-11-04 16:31:24.531  INFO 15512 --- [http-nio-80-exec-8] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
