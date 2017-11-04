@@ -9,6 +9,6 @@ public class IndexControlller
   @RequestMapping("/")
   public String index()
   {
-    return "forward:index.html";
+    return "forward:index404.html";
   }
 }
