@@ -145,3 +145,8 @@ function nextPage() {
 	window.location.hash = "#" + p;
 	Csearch();
 }
+
+
+$("#download").click(function(){
+	window.location.href="/excel";
+})

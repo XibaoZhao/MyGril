@@ -11,12 +11,13 @@ public class Girl {
 	@Id
 	@GeneratedValue
 	private Integer id;
-
-	@Column(name = "cup_size")
-	private String cupSize;
-
+	
+	
 	@Column(name = "age")
 	private Integer age;
+	
+	@Column(name = "cup_size")
+	private String cupSize;
 
 	@Column(name = "is_use")
 	private String isUse;
