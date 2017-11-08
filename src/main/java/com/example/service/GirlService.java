@@ -39,11 +39,6 @@ public class GirlService {
 		return result;
 	}
 	
-	public Girl findOne(Integer id){
-		Girl girl = girlRepository.findOne(id);
-		return girl;
-	}
-	
 	//增、改
 	@Transactional
 	public void addGirl(String id,Integer age,String cupSize){
@@ -70,7 +65,6 @@ public class GirlService {
 	}
 	
 	private Specification<Girl> buildSpecification(final String cupSize){
-		
 		return new Specification<Girl>() {
 			@Override
 			public Predicate toPredicate(Root<Girl> root, CriteriaQuery<?> query, CriteriaBuilder cb) {
