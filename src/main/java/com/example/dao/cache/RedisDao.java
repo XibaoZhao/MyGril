@@ -1,6 +1,5 @@
 package com.example.dao.cache;
 
-import com.dyuproject.protostuff.LinkedBuffer;
 import com.dyuproject.protostuff.ProtostuffIOUtil;
 import com.dyuproject.protostuff.runtime.RuntimeSchema;
 import com.example.domain.Girl;
@@ -9,9 +8,6 @@ import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 
 public class RedisDao {
-	
-	public RedisDao() {
-	}
 	
 	public RedisDao(String ip, int port) {
 		jedisPool = new JedisPool(ip, port);
