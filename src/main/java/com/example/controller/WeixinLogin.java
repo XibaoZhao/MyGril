@@ -40,8 +40,9 @@ public class WeixinLogin {
 			String sessionKey = (String) json.get("session_key");
 			System.out.println(openid);
 			System.out.println(sessionKey);
-		} catch (Exception e) {
-			// TODO: handle exception
+		} finally{
+			br.close();
+			inputStream.close();
 		}
 		return openid;
 	}
